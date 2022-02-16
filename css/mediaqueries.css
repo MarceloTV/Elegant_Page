@@ -1,0 +1,91 @@
+@media screen and (max-width: 1000px) {
+  .content .container {
+    width: 90%;
+  }
+
+  footer .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .content .container {
+    width: 100%;
+  }
+
+  footer .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main .entry h1 {
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .content .container .article3 .text .gold p {
+    letter-spacing: 4px;
+  }
+
+  .content .container > br:nth-child(1),
+  .content .container > br:nth-child(2),
+  .content .container > br:nth-child(3),
+  .content .container > br:nth-child(11),
+  .content .container > br:nth-child(12),
+  .content .container > br:nth-child(13) {
+    display: none;
+  }
+
+  .content .container .article1 img,
+  .content .container .article2 img,
+  .content .container .article3 img {
+    display: none;
+  }
+
+  .content .container .article1 .text,
+  .content .container .article2 .text,
+  .content .container .article3 .text {
+    width: 100%;
+  }
+
+  .content .container .article1 .num,
+  .content .container .article2 .num,
+  .content .container .article3 .num {
+    top: -65px;
+    left: 0;
+  }
+
+  .content .container .article1,
+  .content .container .article2,
+  .content .container .article3 {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  header {
+    padding: 20px 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header > nav {
+    display: none;
+  }
+
+  header .menu_mobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .main .entry {
+    margin-bottom: 180px;
+  }
+
+  .main .entry h1 {
+    font-size: 2em;
+  }
+}

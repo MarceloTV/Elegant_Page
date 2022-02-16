@@ -1,0 +1,17 @@
+@keyframes arrow_down {
+  0% {
+    top: 0;
+  }
+
+  50% {
+    top: 5px;
+  }
+
+  100% {
+    top: 0;
+  }
+}
+
+.main .entry .scroll i {
+  animation: arrow_down 1.5s linear infinite;
+}

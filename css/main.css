@@ -1,0 +1,482 @@
+@font-face {
+  font-family: "chronicle display";
+  src: url(../fonts/chronicle_display/Chronicle\ Display\ Roman.otf);
+}
+
+@font-face {
+  font-family: "gilroy bold";
+  src: url(../fonts/gilroy-bold/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "gilroy semi-bold";
+  src: url(../fonts/gilroy-semibold/Gilroy-SemiBold.ttf);
+}
+
+* {
+  font-family: "gilroy semi-bold";
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 60px;
+  z-index: 1;
+}
+
+header h2 {
+  font-family: "display chronicles";
+}
+
+header .menu_mobile {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+header nav a:nth-child(3) {
+  margin: 0;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .account div {
+  margin-right: 10px;
+}
+
+header .account p {
+  font-size: 0.8rem;
+}
+
+/*-----MAIN-----*/
+
+.main {
+  width: 100%;
+  height: 130vh;
+  background: url(../img/mountain.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main .entry {
+  margin-bottom: 140px;
+}
+
+.main .entry h1 {
+  font-family: "chronicle display";
+  color: white;
+  font-weight: bold;
+  font-size: 4em;
+}
+
+.main .entry .gold p,
+.main .entry .gold hr {
+  color: #fbd784;
+  display: inline-block;
+}
+
+.main .entry .gold p {
+  letter-spacing: 8px;
+  font-family: "gilroy bold";
+  font-size: 0.8em;
+}
+
+.main .entry .gold hr {
+  width: 60px;
+  border-top: 2.5px solid #fbd784;
+  opacity: 1;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.main .entry .scroll {
+  color: white;
+}
+
+.main .entry .scroll small {
+  margin-right: 10px;
+}
+
+.main .entry .scroll i {
+  position: relative;
+}
+
+.main .gradient {
+  position: absolute;
+  height: 5vh;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(11, 29, 32, 0.4939017843465511) 48%,
+    rgba(11, 29, 38, 1) 100%
+  );
+  /* background: linear-gradient(to bottom, transparent, #0b1d26); */
+}
+
+.content {
+  background: #0b1d26;
+  padding: 20px;
+}
+
+.content .container {
+  width: 70%;
+  top: -100px;
+  position: relative;
+  padding: 0;
+}
+
+/* CONTENT ARTICLE 1 */
+
+.content .container .article1 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+}
+
+.content .container .article1 .num {
+  position: absolute;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.2);
+  top: -50px;
+  left: -50px;
+  font-family: "gilroy bold";
+}
+
+.content .container .article1 .text {
+  width: 45%;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.content .container .article1 .text .gold hr,
+.content .container .article1 .text .gold p {
+  color: #fbd784;
+  display: inline-block;
+}
+
+.content .container .article1 .text .gold p {
+  font-family: "gilroy bold";
+  letter-spacing: 8px;
+  font-size: 0.8em;
+}
+
+.content .container .article1 .text .gold hr {
+  width: 60px;
+  border-top: 2.5px solid #fbd784;
+  vertical-align: middle;
+  opacity: 1;
+  margin-right: 15px;
+}
+
+.content .container .article1 .text h2 {
+  font-family: "chronicle display";
+  font-size: 2em;
+}
+
+.content .container .article1 .text > p {
+  font-size: 0.9em;
+}
+
+.content .container .article1 .text a {
+  color: #fbd784;
+  text-decoration: none;
+}
+
+.content .container .article1 .text a i {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.content .container .article1 img {
+  width: 40%;
+}
+
+/* CONTENT ARTICLE 2*/
+
+.content .container .article2 {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  position: relative;
+}
+
+.content .container .article2 .num {
+  position: absolute;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.2);
+  top: -50px;
+  right: -50px;
+  font-family: "gilroy bold";
+}
+
+.content .container .article2 .text {
+  width: 45%;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.content .container .article2 .text .gold hr,
+.content .container .article2 .text .gold p {
+  color: #fbd784;
+  display: inline-block;
+}
+
+.content .container .article2 .text .gold p {
+  font-family: "gilroy bold";
+  letter-spacing: 8px;
+  font-size: 0.8em;
+}
+
+.content .container .article2 .text .gold hr {
+  width: 60px;
+  border-top: 2.5px solid #fbd784;
+  vertical-align: middle;
+  opacity: 1;
+  margin-right: 15px;
+}
+
+.content .container .article2 .text h2 {
+  font-family: "chronicle display";
+  font-size: 2em;
+}
+
+.content .container .article2 .text > p {
+  font-size: 0.9em;
+}
+
+.content .container .article2 .text a {
+  color: #fbd784;
+  text-decoration: none;
+}
+
+.content .container .article2 .text a i {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.content .container .article2 img {
+  width: 40%;
+}
+
+/* CONTENT ARTICLE 3 */
+
+.content .container .article3 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: white;
+}
+
+.content .container .article3 .num {
+  position: absolute;
+  font-size: 10em;
+  color: rgba(255, 255, 255, 0.2);
+  top: -50px;
+  left: -50px;
+  font-family: "gilroy bold";
+}
+
+.content .container .article3 .text {
+  width: 52%;
+  padding-top: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.content .container .article3 .text .gold hr,
+.content .container .article3 .text .gold p {
+  color: #fbd784;
+  display: inline-block;
+}
+
+.content .container .article3 .text .gold p {
+  font-family: "gilroy bold";
+  letter-spacing: 8px;
+  font-size: 0.8em;
+}
+
+.content .container .article3 .text .gold hr {
+  width: 30px;
+  border-top: 2.5px solid #fbd784;
+  vertical-align: middle;
+  opacity: 1;
+  margin-right: 12px;
+}
+
+.content .container .article3 .text h2 {
+  font-family: "chronicle display";
+  font-size: 2em;
+}
+
+.content .container .article3 .text > p {
+  font-size: 0.9em;
+}
+
+.content .container .article3 .text a {
+  color: #fbd784;
+  text-decoration: none;
+}
+
+.content .container .article3 .text a i {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+.content .container .article3 img {
+  width: 40%;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0b1d26;
+  color: white;
+  padding: 20px;
+}
+
+footer .container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+footer .container .text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .container .text .important h3 {
+  font-family: "chronicle display";
+}
+
+footer .container .text .important p {
+  font-size: 0.7em;
+}
+
+footer .container .text > p {
+  font-size: 0.7em;
+  opacity: 0.4;
+}
+
+footer .container .navs {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .container .navs h3 {
+  color: #fbd784;
+  font-family: "gilroy bold";
+  font-size: 1.3em;
+}
+
+footer .container .navs .nav-footer nav {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .container .navs .nav-footer nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 0.9em;
+  padding: 5px 0;
+}
+
+/* MOBILE MENU */
+
+#menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #0b1d26;
+  z-index: 40;
+  padding: 20px 30px;
+  left: -100%;
+}
+
+#menu div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu div i {
+  color: white;
+  font-size: 2em;
+}
+
+#menu div h2 {
+  color: white;
+}
+
+#menu > hr {
+  opacity: 1;
+  border-top: 1px solid white;
+  margin: 10px 0;
+}
+
+#menu nav a {
+  display: block;
+  color: #fbd784;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+#menu nav hr {
+  border-top: 1px solid #fbd784;
+  opacity: 1;
+  margin: 0;
+}
+
+.show {
+  transition: ease all 0.5s;
+  left: 0 !important;
+}
+
+.close {
+  transition: ease all 0.5s;
+  left: -100% !important;
+}
