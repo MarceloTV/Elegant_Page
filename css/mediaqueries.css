@@ -41,20 +41,28 @@
   .content .container .article1 img,
   .content .container .article2 img,
   .content .container .article3 img {
-    display: none;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: brightness(70%);
   }
 
   .content .container .article1 .text,
   .content .container .article2 .text,
   .content .container .article3 .text {
-    width: 100%;
+    width: 90%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
   }
 
   .content .container .article1 .num,
   .content .container .article2 .num,
   .content .container .article3 .num {
-    top: -65px;
-    left: 0;
+    top: -5%;
+    z-index: 3;
+    color: white;
+    left: 33%;
   }
 
   .content .container .article1,
@@ -87,5 +95,30 @@
 
   .main .entry h1 {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .content .container .article1 img,
+  .content .container .article2 img,
+  .content .container .article3 img {
+    height: 600px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content .container .article1 .num,
+  .content .container .article2 .num,
+  .content .container .article3 .num {
+    left: 23%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content .container .article1 .num,
+  .content .container .article2 .num,
+  .content .container .article3 .num {
+    left: 23%;
+    top: 10px;
   }
 }
