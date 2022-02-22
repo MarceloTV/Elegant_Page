@@ -107,7 +107,10 @@
 }
 
 @media screen and (max-width: 450px) {
-  .content .container .article1 .num,
+  .content .container .article1 .num {
+    left: 23%;
+  }
+
   .content .container .article2 .num,
   .content .container .article3 .num {
     left: 23%;
@@ -115,10 +118,13 @@
 }
 
 @media screen and (max-width: 400px) {
-  .content .container .article1 .num,
-  .content .container .article2 .num,
-  .content .container .article3 .num {
+  .content .container .article1 .num {
     left: 23%;
     top: 10px;
+  }
+
+  .content .container .article2 .num,
+  .content .container .article3 .num {
+    left: 20%;
   }
 }
