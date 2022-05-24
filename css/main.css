@@ -85,6 +85,7 @@ header .account p {
   justify-content: center;
   align-items: center;
   position: relative;
+  background-size: cover;
 }
 
 .main .entry {
